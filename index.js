@@ -38,11 +38,11 @@ const main = async () => {
     const browser = await pup.launch({
         headless: false,
         defaultViewport: null,
-        slowMo: 100
+        slowMo: 400
     });
     const pages = await browser.pages();
     const page = pages[0];
-    await page.goto(`file://${__dirname}/app.html`);
+    await page.goto(`file://${__dirname}/game/app.html`);
     await play(page);
     // await browser.close();
 };
