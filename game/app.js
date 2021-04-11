@@ -97,6 +97,5 @@ options.forEach(option => {
     })
 })
 
-
 // reseting game after screen loads
 window.onload = reset();
